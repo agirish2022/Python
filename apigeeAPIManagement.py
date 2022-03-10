@@ -3,6 +3,7 @@ import google.auth.transport.requests
 import os
 import requests
 import argparse
+import sys
 
 
 def get_token():
@@ -122,7 +123,7 @@ def main():
     }
     if action == "importanddeploy" :
         if bundlezipfile == None:
-            print("--bundlezipfile argument is expected")
+            sys.exit("--bundlezipfile argument is expected")
         revisionNum=import_bundle(formedHeaders,organizations,bundlezipfile,apiname)
         deploy_as_revision(formedHeaders,organizations,environments,apiname,revisionNum)
     elif action == "undeployanddelete" :
