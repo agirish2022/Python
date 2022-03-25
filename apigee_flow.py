@@ -21,8 +21,7 @@ def read_populate(bucketname,path,flowtype):
     reqflowdic = {}
     resflowdic = {}
     condflow = {}
-    desiredschema= {'Proxy': {'PreFlow' : {'Request' : None, 'Response' : None},'PostFlow' : {'Request' : None, 'Response' : None } , 'Flows' : None}, 'Target': {'PreFlow' : {'Request' : None, 'Response' : None},'PostFlow' : {'Request' : None, 'Response' : None } , 'Flows' : None}}
-
+    
     for child in root:
         if child.tag == "PreFlow":
             for subchild in child:
