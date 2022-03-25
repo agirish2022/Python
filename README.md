@@ -9,3 +9,7 @@ python3 apigeeAPIManagement.py --action importanddeploy --organization XXXXXX --
 ```
 python3 apigeeAPIManagement.py --action undeployanddelete --organization XXXXXX --environment eval --apiname apifromzip
 ```
+**Apigee Flow**
+```
+python3 apigee_flow.py --bucketname 'XXXXXX' --pathtillproxy 'XXXXXX'
+```
