@@ -13,3 +13,5 @@ python3 apigeeAPIManagement.py --action undeployanddelete --organization XXXXXX 
 ```
 python3 apigee_flow.py --bucketname 'XXXXXX' --pathtillproxy 'XXXXXX'
 ```
+
+https://github.com/apigee/terraform-modules/tree/main/samples/x-l7xlb
